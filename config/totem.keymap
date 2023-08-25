@@ -16,8 +16,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
-#define LEF  1
-#define RIG  2
+#define GARY  1
+#define ZHAO  2
 #define ADJ  3
 
 &mt {
@@ -84,8 +84,8 @@
             >;
         };
 
-        LOWER {
-            label = "Left Keyboard";
+        GARY {
+            label = "GARY Keyboard";
             bindings = <
                 &trans  &kp PAGE_UP   &kp UP_ARROW   &kp PG_DN  &kp LBRC  &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &kp PLUS
                 &trans     &kp LEFT       &kp DOWN   &kp RIGHT  &kp LBKT  &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6        &kp MINUS
@@ -94,8 +94,8 @@
             >;
         };
 
-        RAISE {
-            label = "Right Keyboard";
+        ZHAO {
+            label = "ZHAO Keyboard";
             bindings = <
         &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
           &trans  &trans    &trans      &trans       &trans     &trans         &trans           &trans   &trans     &trans

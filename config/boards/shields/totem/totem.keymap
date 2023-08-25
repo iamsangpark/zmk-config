@@ -16,8 +16,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
-#define LEF  1
-#define RIG  2
+#define LOWER  1
+#define RAISE  2
 #define ADJ  3
 
 &mt {
