@@ -114,10 +114,10 @@
         ADJUST {
             label = "Adjustment layer";
             bindings = <
-                    &bt BT_CLR  &trans  &trans  &trans  &bt BT_SEL 0    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &bt BT_SEL 1    &trans  &trans  &trans  &trans  &trans
-&bootloader  &ext_power EP_TOG  &trans  &trans  &trans  &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans  &bootloader
-                                        &trans  &trans        &trans    &trans  &trans  &trans
+               &bt BT_CLR  &trans  &bootloader  &trans  &bt BT_SEL 0    &trans  &trans  &bootloader  &trans  &trans
+                   &trans  &trans       &trans  &trans  &bt BT_SEL 1    &trans  &trans       &trans  &trans  &trans
+&trans  &ext_power EP_TOG  &trans       &trans  &trans  &bt BT_SEL 2    &trans  &trans       &trans  &trans  &trans  &trans
+                                        &trans  &trans        &trans    &trans  &trans       &trans
             >;
         };
     };
