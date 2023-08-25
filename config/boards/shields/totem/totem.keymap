@@ -84,7 +84,7 @@
             >;
         };
 
-        LEFT {
+        LOWER {
             label = "Left Keyboard";
             bindings = <
                 &trans  &kp PAGE_UP   &kp UP_ARROW   &kp PG_DN  &kp LBRC  &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &kp PLUS
@@ -94,7 +94,7 @@
             >;
         };
 
-        RIGHT {
+        RAISE {
             label = "Right Keyboard";
             bindings = <
         &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
