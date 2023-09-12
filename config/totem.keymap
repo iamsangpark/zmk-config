@@ -106,7 +106,7 @@
         SYM {
             label = "Symbol layer";
             bindings = <
-        &trans  &trans  &trans  &trans         &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp RA(RG(I))  &trans            &trans  &trans
+        &trans  &trans  &trans  &trans         &kp LEFT_BRACE          &kp RIGHT_BRACE        &trans         &kp RA(RG(I))     &trans  &trans
         &trans  &trans  &trans  &kp LESS_THAN  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp EQUAL      &kp GREATER_THAN  &trans  &trans
 &trans  &trans  &trans  &trans  &trans         &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans         &trans            &trans  &kp SLASH  &kp HOME
                         &trans  &trans         &trans                  &trans                 &trans         &trans
