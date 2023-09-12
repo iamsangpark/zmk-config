@@ -96,20 +96,20 @@
         NUM {
             label = "Number and Arrow Layer";
             bindings = <
-        &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans      &trans      &trans    &trans  &trans     &trans
-        &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp LBKT    &kp LEFT    &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LPAR    &kp RPAR    &trans    &trans  &trans     &trans  &trans
-                              &trans     &trans     &trans      &kp RSHIFT  &trans    &trans
+        &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans    &trans      &trans    &trans  &trans     &trans
+        &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans    &kp LEFT    &kp DOWN  &kp UP  &kp RIGHT  &trans
+&trans  &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans    &trans      &trans    &trans  &trans     &trans  &trans
+                              &trans     &trans     &trans    &kp RSHIFT  &trans    &trans
             >;
         };
 
         SYM {
             label = "Symbol layer";
             bindings = <
-        &trans  &trans  &trans  &trans         &kp LEFT_BRACE          &kp RIGHT_BRACE        &trans         &kp RA(RG(I))     &trans  &trans
-        &trans  &trans  &trans  &kp LESS_THAN  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp EQUAL      &kp GREATER_THAN  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans         &trans            &trans  &kp SLASH  &kp HOME
-                        &trans  &trans         &trans                  &trans                 &trans         &trans
+        &trans  &trans  &trans  &trans         &kp LEFT_BRACE          &kp RIGHT_BRACE        &trans     &kp RA(RG(I))     &trans  &trans
+        &trans  &trans  &trans  &kp LESS_THAN  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp EQUAL  &kp GREATER_THAN  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &trans     &trans            &trans  &kp SLASH  &kp HOME
+                        &trans  &trans         &trans                  &trans                 &trans     &trans
             >;
         };
 
