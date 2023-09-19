@@ -50,6 +50,11 @@
             key-positions = <4 3>;
             layers = <0>;
         };
+
+        Delete {
+            bindings = <&kp RA(BACKSPACE)>;
+            key-positions = <8 37>;
+        };
     };
 
     behaviors {
