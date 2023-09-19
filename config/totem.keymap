@@ -87,21 +87,21 @@
             // ┏━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━╋━━━━━━━━━┓
             // ┃   ESC     ┃      Z     ┃     X     ┃      C     ┃      V     ┃      B     ┃   ┃      N     ┃      M     ┃      ,     ┃      .     ┃     /     ┃ SHIFT/' ┃
             // ┗━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━━┛
-            //                                      ┃   ENTER    ┃ NUM / TAB  ┃    SPACE   ┃   ┃   SPACE    ┃  SYM/BSPC  ┃      -     ┃
+            //                                      ┃ NUM / TAB  ┃   ENTER    ┃    SPACE   ┃   ┃   SPACE    ┃  SYM/BSPC  ┃      -     ┃
             //                                      ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
             &kp Q        &kp W       &kp E       &kp R         &kp T        &kp Y      &kp U         &kp I       &kp O       &kp P
             &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHIFT F  &kp G        &kp H      &hm RSHFT J   &hm RGUI K  &hm RALT L  &hm RCTRL SEMICOLON
 &kp ESCAPE  &kp Z        &kp X       &kp C       &kp V         &kp B        &kp N      &kp M         &kp COMMA   &kp DOT     &kp SLASH            &mt RIGHT_SHIFT SQT
-                                     &kp ENTER   &lt NUM TAB   &kp SPACE    &kp SPACE  &lt SYM BSPC  &kp MINUS
+                                     &lt NUM TAB &kp ENTER     &kp SPACE    &kp SPACE  &lt SYM BSPC  &lt NUM MINUS
             >;
         };
 
         NUM {
             label = "Number and Arrow Layer";
             bindings = <
-        &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans    &trans      &kp LS(LC(LEFT))  &kp LC(LS(RIGHT))  &trans     &trans
+        &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans    &trans      &kp LS(LC(LEFT))  &kp LC(LS(RIGHT))  &kp BSPC    &trans
         &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans    &kp LEFT    &kp DOWN          &kp UP             &kp RIGHT  &trans
 &trans  &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans    &trans      &trans            &trans             &trans     &trans  &trans
                               &trans     &trans     &trans    &kp RSHIFT  &trans            &trans
