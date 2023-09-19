@@ -51,9 +51,28 @@
             layers = <0>;
         };
 
-        Delete {
-            bindings = <&kp RA(BACKSPACE)>;
-            key-positions = <8 37>;
+        combo_exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 11>;
+            layers = <0>;
+        };
+
+        combo_at {
+            bindings = <&kp AT>;
+            key-positions = <2 12>;
+            layers = <0>;
+        };
+
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <3 13>;
+            layers = <0>;
+        };
+
+        combo_ampberstand {
+            bindings = <&kp AMPS>;
+            key-positions = <4 14>;
+            layers = <0>;
         };
     };
 
