@@ -90,9 +90,9 @@
     // };
 
     behaviors {
-        new_behavior: new_behavior {
+        pord: p_or_delete_word {
             compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
+            label = "P_OR_DELETEWORD";
             bindings =
                 <&kp P>,
                 <&kp RA(BACKSPACE)>;
@@ -121,7 +121,7 @@
             //                                      ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q  &kp W  &kp E     &kp R         &kp T             &kp Y      &kp U          &kp I      &kp O    &kp P
+            &kp Q  &kp W  &kp E     &kp R         &kp T             &kp Y      &kp U          &kp I      &kp O    &pord
             &kp A  &kp S  &kp D     &kp F         &kp G             &kp H      &kp J          &kp K      &kp L    &kp SEMICOLON
 &kp ESCAPE  &kp Z  &kp X  &kp C     &kp V         &kp B             &kp N      &kp M          &kp COMMA  &kp DOT  &kp SLASH      &mt RIGHT_SHIFT SQT
                           &kp LGUI  &lt NUM BSPC  &kp LEFT_SHIFT    &kp SPACE  &lt SYM ENTER  &kp LALT
