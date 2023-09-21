@@ -103,16 +103,16 @@
             &kp A  &kp S  &kp D     &kp F         &kp G                 &kp H                 &kp J           &kp K      &kp L    &kp SEMICOLON
 &kp ESCAPE  &kp Z  &kp X  &kp C     &kp V         &kp B                 &kp N                 &kp M           &kp COMMA  &kp DOT  &kp SLASH      &mt RIGHT_SHIFT SQT
                           &kp LGUI  &lt_bspc LAYONE BASE  &mt LEFT_SHIFT SPACE  &mt RIGHT_SHIFT SPACE  &lt LAYTWO ENTER  &kp MINUS
-LAYTWO >;
+            >;
         };
 
         LAYONE {
-LAYTWO label = "Layer One";
+            label = "Layer One";
             bindings = <
-        &trans     &kp LG(1)  &kp LG(2)   &kp LG(3) &trans    &trans      &kp LS(LC(LEFT))  &kp LC(LS(RIGHT))  &kp RA(BSPC)  &trans
+        &trans     &kp LG(1)  &kp LG(2)   &kp LG(3) &trans    &trans      &kp LS(LC(LEFT))  &kp LC(LS(RIGHT))  &trans        &trans
         &trans     &trans     &trans      &trans    &trans    &kp LEFT    &kp DOWN          &kp UP             &kp RIGHT     &trans
 &trans  &trans     &trans     &trans      &trans    &trans    &trans      &trans            &trans             &trans        &trans  &trans
-                              &trans     &trans     &trans    &trans      &trans            &kp LALT
+                              &trans     &trans     &trans    &trans      &trans            &trans
             >;
         };
 
