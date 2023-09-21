@@ -77,7 +77,7 @@
             bindings = <&kp TAB>;
             key-positions = <12 13>;
             layers = <0>;
-        }
+        };
     };
 
     behaviors {
