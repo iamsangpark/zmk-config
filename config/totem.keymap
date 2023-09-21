@@ -79,7 +79,7 @@
         compatible = "zmk,behavior-mod-morph";
         label = "BACKSPACE_DELETE";
         #binding-cells = <0>;
-        bindings = <&kp BACKSPACE>, <&kp DELETE>;
+        bindings = <&kp BACKSPACE>, <&kp LA(BSPC)>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
       };
 
