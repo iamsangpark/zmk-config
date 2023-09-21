@@ -75,7 +75,7 @@
 
         combo_cmd_tab {
             bindings = <&kp TAB>;
-            key - positions = <12 13>;
+            key-positions = <12 13>;
             layers = <0>;
         }
     };
