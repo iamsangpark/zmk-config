@@ -135,7 +135,7 @@
             label = "Adjustment layer";
             bindings = <
         &trans  &trans  &trans    &kp LA(LC(U))  &kp LA(LC(I))  &kp LA(LC(LEFT))      &kp LA(LC(RIGHT))  &kp RG(BACKSLASH)    &trans  &trans
-        &trans  &trans  &trans    &kp LA(LC(J))  &kp LA(LC(K))  &kp LA(LC(LG(LEFT)))  &kp LA(LC(ENTER))  &trans               &trans  &trans
+        &trans  &trans  &trans    &kp LA(LC(J))  &kp LA(LC(K))  &kp LA(LC(LG(RIGHT)))  &kp LA(LC(ENTER))  &trans               &trans  &trans
 &trans  &trans  &trans  &trans         &trans         &trans    &trans                &trans             &trans               &trans  &trans  &trans
                         &trans         &trans         &trans    &trans                &trans             &trans
             >;
