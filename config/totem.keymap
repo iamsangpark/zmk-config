@@ -134,10 +134,10 @@
         ADJUST {
             label = "Adjustment layer";
             bindings = <
-        &trans  &trans  &trans    &kp LA(LC(U))  &kp LA(LC(I))  &trans  &trans  &kp RG(BACKSLASH)    &trans  &trans
-        &trans  &trans  &trans    &kp LA(LC(J))  &kp LA(LC(K))  &trans  &kp LA(LC(ENTER))             &trans  &trans  &trans
-&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans             &trans  &trans  &trans  &trans
-                        &trans         &trans         &trans    &trans  &trans             &trans
+        &trans  &trans  &trans    &kp LA(LC(U))  &kp LA(LC(I))  &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))  &kp RG(BACKSLASH)    &trans  &trans
+        &trans  &trans  &trans    &kp LA(LC(J))  &kp LA(LC(K))  &trans            &kp LA(LC(ENTER))  &trans               &trans  &trans
+&trans  &trans  &trans  &trans         &trans         &trans    &trans            &trans             &trans               &trans  &trans  &trans
+                        &trans         &trans         &trans    &trans            &trans             &trans
             >;
         };
     };
