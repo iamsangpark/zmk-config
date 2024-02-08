@@ -114,10 +114,10 @@
         LAYONE {
             label = "Layer One";
             bindings = <
-        &trans     &kp LG(N1)  &kp LG(N2)   &kp LG(N3) &trans    &trans      &kp LS(LC(LEFT))  &kp LC(LS(RIGHT))  &trans        &trans
-        &trans     &trans     &trans      &trans    &trans    &kp LEFT    &kp DOWN          &kp UP             &kp RIGHT     &trans
-&trans  &trans     &trans     &trans      &trans    &trans    &trans      &trans            &trans             &trans        &trans  &trans
-                              &trans     &trans     &trans    &trans      &trans            &trans
+        &trans     &kp LG(N1)            &kp LG(N2)          &kp LG(N3)           &trans      &trans      &kp LS(LC(LEFT))  &kp LC(LS(RIGHT))  &trans        &trans
+        &trans     &kp LA(LC(LEFT))      &kp LA(LC(C))       &kp LA(LC(RIGHT))    &trans      &kp LEFT    &kp DOWN          &kp UP             &kp RIGHT     &trans
+&trans  &trans     &trans                &trans              &trans               &trans      &trans      &trans            &trans             &trans        &trans  &trans
+                   &trans                &trans              &trans               &trans      &trans      &trans
             >;
         };
 
@@ -134,7 +134,7 @@
         ADJUST {
             label = "Adjustment layer";
             bindings = <
-        &trans  &trans  &trans    &kp LA(LC(U))  &kp LA(LC(I))  &kp LA(LC(LEFT))      &kp LA(LC(RIGHT))  &kp RG(BACKSLASH)    &trans  &trans
+        &trans  &trans  &trans    &kp LA(LC(U))  &kp LA(LC(I))  &trans      &trans  &kp RG(BACKSLASH)    &trans  &trans
         &trans  &trans  &trans    &kp LA(LC(J))  &kp LA(LC(K))  &kp LA(LC(LG(RIGHT)))  &kp LA(LC(ENTER))  &trans               &trans  &trans
 &trans  &trans  &trans  &trans         &trans         &trans    &trans                &trans             &trans               &trans  &trans  &trans
                         &trans         &trans         &trans    &trans                &trans             &trans
