@@ -85,12 +85,6 @@
             key-positions = <12 13>;
             layers = <1>;
         };
-
-        combo_test {
-            bindings = <&kp EQUAL>;
-            key-positions = <14 13>;
-            layers = <1>;
-        };
     };
 
     behaviors {
@@ -141,8 +135,8 @@
             label = "Layer One";
             bindings = <
         &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3   &kp NUMBER_4       &kp NUMBER_5            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-        &trans        &kp LA(LC(LEFT))  &kp LA(LC(C))  &kp LA(LC(RIGHT))  &kp LEFT_PARENTHESIS    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
-&trans  &trans        &trans            &trans         &trans             &kp LESS_THAN           &trans        &trans        &trans        &trans        &trans        &trans
+        &trans        &trans  &kp EQUAL  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
+&trans  &trans        &kp LA(LC(LEFT))  &kp LA(LC(C))  &kp LA(LC(RIGHT))   &kp LESS_THAN           &trans        &trans        &trans        &trans        &trans        &trans
                                         &trans         &trans             &trans                  &trans        &trans        &trans
             >;
         };
@@ -150,8 +144,8 @@
         LAYTWO {
             label = "Layer Two";
             bindings = <
-        &trans  &kp A   &trans  &trans  &kp LEFT_BRACKET    &kp RIGHT_BRACKET      &trans     &kp RA(RG(I))     &trans  &trans
-        &trans  &trans  &trans  &trans  &trans              &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp GREATER_THAN  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans     &kp RIGHT_BRACKET      &trans     &kp RA(RG(I))     &trans  &trans
+        &trans  &trans  &trans  &trans  &trans              &kp RIGHT_PARENTHESIS  &trans   &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &kp PIPE               &trans     &trans            &trans  &trans  &trans
                         &trans  &trans  &trans              &trans                 &trans     &trans
             >;
