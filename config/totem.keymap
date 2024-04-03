@@ -129,10 +129,10 @@
         LAYTWO {
             label = "Layer Two";
             bindings = <
-        &trans  &trans  &trans  &trans  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans     &kp RA(RG(I))     &trans  &trans
+        &trans  &kp A   &trans  &trans  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans     &kp RA(RG(I))     &trans  &trans
         &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp GREATER_THAN  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp LESS_THAN           &kp PIPE               &trans     &trans            &trans  &trans  &trans
-                              &trans        &trans        &trans                  &trans                 &trans     &trans
+                        &trans  &trans  &trans                  &trans                 &trans     &trans
             >;
         };
 
