@@ -98,7 +98,17 @@
             label = "LAYER_TAP_BACKSPACE_DELETE";
             #binding-cells = <2>;
             bindings = <&mo>, <&bspc_del>;
+
             tapping-term-ms = <200>;
+        };
+    };
+
+    macros {
+        macro_test: macro_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "MACRO_TEST";
         };
     };
 
@@ -118,20 +128,20 @@
         LAYONE {
             label = "Layer One";
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3   &kp NUMBER_4       &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-        &trans        &kp LA(LC(LEFT))  &kp LA(LC(C))  &kp LA(LC(RIGHT))  &kp LEFT_PARENTHESIS          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
-&trans  &trans        &trans            &trans         &trans            &kp LESS_THAN         &trans        &trans        &trans        &trans        &trans        &trans
-                                        &trans         &trans             &trans          &trans        &trans        &trans
+        &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3   &kp NUMBER_4       &kp NUMBER_5            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+        &trans        &kp LA(LC(LEFT))  &kp LA(LC(C))  &kp LA(LC(RIGHT))  &kp LEFT_PARENTHESIS    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
+&trans  &trans        &trans            &trans         &trans             &kp LESS_THAN           &trans        &trans        &trans        &trans        &trans        &trans
+                                        &trans         &trans             &trans                  &trans        &trans        &trans
             >;
         };
 
         LAYTWO {
             label = "Layer Two";
             bindings = <
-        &trans  &kp A   &trans  &trans  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &trans     &kp RA(RG(I))     &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp GREATER_THAN  &trans  &trans
-&trans  &trans  &trans  &trans  &trans &trans           &kp PIPE               &trans     &trans            &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans                 &trans     &trans
+        &trans  &kp A   &trans  &trans  &kp LEFT_BRACKET    &kp RIGHT_BRACKET      &trans     &kp RA(RG(I))     &trans  &trans
+        &trans  &trans  &trans  &trans  &trans              &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp GREATER_THAN  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &kp PIPE               &trans     &trans            &trans  &trans  &trans
+                        &trans  &trans  &trans              &trans                 &trans     &trans
             >;
         };
 
