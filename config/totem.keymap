@@ -107,11 +107,11 @@
             tapping-term-ms = <200>;
         };
 
-        dollar_curly: dollar_curly {
+        tap_macro: tap_macro {
             compatible = "zmk,behavior-tap-dance";
-            label = "DOLLAR_CURLY";
+            label = "TAP_MACRO";
             #binding-cells = <0>;
-            bindings = <&kp DOLLAR>, <&kp LEFT_BRACE>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&macro_dollar_curly>;
         };
     };
 
@@ -121,6 +121,13 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
             label = "MACRO_ARROW";
+        };
+
+        macro_dollar_curly: macro_dollar_curly {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOLLAR &kp LEFT_BRACE>;
+            label = "MACRO_DOLLAR_CURLY";
         };
     };
 
@@ -141,7 +148,7 @@
             label = "Layer One";
             bindings = <
         &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3   &kp NUMBER_4          &kp NUMBER_5        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-        &trans        &dollar_curly            &kp EQUAL      &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
+        &trans        &trans            &kp EQUAL      &tap_macro  &kp LEFT_BRACKET    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
 &trans  &trans        &kp LA(LC(LEFT))  &kp LA(LC(C))  &kp LA(LC(RIGHT))     &kp LESS_THAN       &trans        &trans        &trans        &trans        &trans        &trans
                                         &trans         &trans                &trans              &trans        &trans        &trans
             >;
