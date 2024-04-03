@@ -107,6 +107,13 @@
 
             tapping-term-ms = <200>;
         };
+
+        dollar_curly: dollar_curly {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOLLAR_CURLY";
+            #binding-cells = <1>;
+            bindings = <&kp DOLLAR>, <&kp LEFT_BRACE>;
+        };
     };
 
     macros {
@@ -134,20 +141,20 @@
         LAYONE {
             label = "Layer One";
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3   &kp NUMBER_4       &kp NUMBER_5            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-        &trans        &trans  &kp EQUAL  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
-&trans  &trans        &kp LA(LC(LEFT))  &kp LA(LC(C))  &kp LA(LC(RIGHT))   &kp LESS_THAN           &trans        &trans        &trans        &trans        &trans        &trans
-                                        &trans         &trans             &trans                  &trans        &trans        &trans
+        &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3   &kp NUMBER_4          &kp NUMBER_5        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+        &trans        &dollar_curly            &kp EQUAL      &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
+&trans  &trans        &kp LA(LC(LEFT))  &kp LA(LC(C))  &kp LA(LC(RIGHT))     &kp LESS_THAN       &trans        &trans        &trans        &trans        &trans        &trans
+                                        &trans         &trans                &trans              &trans        &trans        &trans
             >;
         };
 
         LAYTWO {
             label = "Layer Two";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans     &kp RIGHT_BRACKET      &trans     &kp RA(RG(I))     &trans  &trans
-        &trans  &trans  &trans  &trans  &trans              &kp RIGHT_PARENTHESIS  &trans   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &kp PIPE               &trans     &trans            &trans  &trans  &trans
-                        &trans  &trans  &trans              &trans                 &trans     &trans
+        &trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACKET      &trans  &kp RA(RG(I))  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS  &trans  &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PIPE               &trans  &trans         &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans                 &trans  &trans
             >;
         };
 
