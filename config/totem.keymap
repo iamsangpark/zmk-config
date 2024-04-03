@@ -22,7 +22,6 @@
 
 &mt {
     quick-tap-ms = <100>;
-    global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
 };
@@ -111,7 +110,7 @@
         dollar_curly: dollar_curly {
             compatible = "zmk,behavior-tap-dance";
             label = "DOLLAR_CURLY";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             bindings = <&kp DOLLAR>, <&kp LEFT_BRACE>;
         };
     };
