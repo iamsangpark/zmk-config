@@ -111,6 +111,8 @@
             label = "TAP_MACRO";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS>, <&macro_dollar_curly>;
+
+            tapping-term-ms = <200>;
         };
     };
 
