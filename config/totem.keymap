@@ -12,7 +12,6 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ //
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -147,10 +146,10 @@
         LAYONE {
             label = "Layer One";
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3   &kp NUMBER_4          &kp NUMBER_5        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-        &trans        &trans            &kp EQUAL      &tap_macro  &kp LEFT_BRACKET    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
-&trans  &trans        &kp LA(LC(LEFT))  &kp LA(LC(C))  &kp LA(LC(RIGHT))     &kp LESS_THAN       &trans        &trans        &trans        &trans        &trans        &trans
-                                        &trans         &trans                &trans              &trans        &trans        &trans
+        &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3   &kp NUMBER_4       &kp NUMBER_5        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+        &trans        &trans            &kp EQUAL      &tap_macro         &kp LEFT_BRACKET    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
+&trans  &trans        &kp LA(LC(LEFT))  &kp LA(LC(C))  &kp LA(LC(RIGHT))  &kp LESS_THAN       &trans        &trans        &trans        &trans        &trans        &trans
+                                        &trans         &trans             &trans              &trans        &trans        &trans
             >;
         };
 
@@ -167,10 +166,10 @@
         ADJUST {
             label = "Adjustment layer";
             bindings = <
-        &bt BT_SEL 0  &bt BT_DISC 0  &bt BT_CLR_ALL  &kp LA(LC(U))  &kp LA(LC(I))    &trans                 &trans             &kp RG(BACKSLASH)  &trans  &trans
-        &bt BT_SEL 1  &bt BT_DISC 1  &trans          &kp LA(LC(J))  &kp LA(LC(K))    &kp LA(LC(LG(RIGHT)))  &kp LA(LC(ENTER))  &trans             &trans  &trans
-&trans  &trans        &trans         &trans          &trans         &trans           &trans                 &trans             &trans             &trans  &trans  &trans
-                                     &trans          &trans         &trans           &trans                 &trans             &trans
+        &trans  &trans  &trans  &kp LA(LC(U))  &kp LA(LC(I))    &trans                 &trans             &kp RG(BACKSLASH)  &trans  &trans
+        &trans  &trans  &trans  &kp LA(LC(J))  &kp LA(LC(K))    &kp LA(LC(LG(RIGHT)))  &kp LA(LC(ENTER))  &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans           &trans                 &trans             &trans             &trans  &trans  &trans
+                        &trans  &trans         &trans           &trans                 &trans             &trans
             >;
         };
     };
