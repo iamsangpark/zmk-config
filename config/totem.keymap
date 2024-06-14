@@ -12,6 +12,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ //
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -168,10 +169,10 @@
         ADJUST {
             label = "Adjustment layer";
             bindings = <
-        &trans  &trans  &trans  &kp LA(LC(U))  &kp LA(LC(I))    &trans                 &trans             &kp RG(BACKSLASH)  &trans  &trans
-        &trans  &trans  &trans  &kp LA(LC(J))  &kp LA(LC(K))    &kp LA(LC(LG(RIGHT)))  &kp LA(LC(ENTER))  &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans           &trans                 &trans             &trans             &trans  &trans  &trans
-                        &trans  &trans         &trans           &trans                 &trans             &trans
+        &bt BT_SEL 0  &trans  &trans  &kp LA(LC(U))  &kp LA(LC(I))    &trans                 &trans             &kp RG(BACKSLASH)  &trans  &trans
+        &bt BT_SEL 1  &trans  &trans  &kp LA(LC(J))  &kp LA(LC(K))    &kp LA(LC(LG(RIGHT)))  &kp LA(LC(ENTER))  &trans             &trans  &trans
+&trans  &trans        &trans  &trans  &trans         &trans           &trans                 &trans             &trans             &trans  &trans  &trans
+                              &trans  &trans         &trans           &trans                 &trans             &trans
             >;
         };
     };
